@@ -13,6 +13,8 @@ import java.sql.Connection
 import java.sql.DriverManager
 import org.jetbrains.exposed.sql.*
 
+fun Application.configureDatabases() {
+}
 /**
  * Makes a connection to a Postgres database.
  *
