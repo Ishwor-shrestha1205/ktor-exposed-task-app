@@ -14,6 +14,11 @@ import java.sql.DriverManager
 import org.jetbrains.exposed.sql.*
 
 fun Application.configureDatabases() {
+    Database.connect(
+        "jdbc:postgresql://localhost:5432/ktor_tutorial_db",
+        user = "postgres",
+        password = "postgres"
+    )
 }
 /**
  * Makes a connection to a Postgres database.
